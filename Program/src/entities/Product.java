@@ -10,6 +10,16 @@ public class Product {
         this.price = price;
         this.quantity = quantity;
     }
+    /*Vamos criar um contrutor opcional, o qual recebe apenas nome e preço do produto. A quantidade em estoque deste novo
+        produto, por padrão, é zero.
+
+        È possivel tbm incluir um construtor pedrão. */
+
+    public Product(String name, double price) { // ISSO AQUI E UM CONSTRUTOR
+        this.name= name;
+        this.price = price;
+        
+    }
 
     public double totalValueInStock() {
         return price * quantity;

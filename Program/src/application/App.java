@@ -22,20 +22,22 @@ public class App {
 
         System.out.print("Price: ");
         double price = sc.nextDouble();
+        System.out.println("how many? ");
+        int quantity = sc.nextInt();
 
-        Product product = new Product(name, price);
+        Product product = new Product(name, price, quantity);
 
-        product.setName("Computador");
+        /*product.setName("Computador");
         System.out.println("Updated name: "+ product.getName());
         product.setPrice(1200);
-        System.out.println("Updated price is: "+product.getPrice());
+        System.out.println("Updated price is: "+product.getPrice());*/
 
         System.out.println();
         System.out.println("Product data: " + product);
         System.out.println();
 
         System.out.print("Enter the number of products to be added in stock: ");
-        int quantity = sc.nextInt();
+        quantity = sc.nextInt();
         product.addProducts(quantity);
 
         System.out.println();
